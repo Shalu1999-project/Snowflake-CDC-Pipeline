@@ -15,7 +15,7 @@ begin
         as
         select * from EMPLOYEE_STREAM;
 
-        INSERT INTO employee_audit_new
+        INSERT INTO employee_audit
         select 
             CURRENT_TIMESTAMP(),
             EMP_ID,
@@ -26,7 +26,7 @@ begin
             METADATA$ISUPDATE
         from TEMP_EMP;
 
-       MERGE INTO EMPLOYEE_NEW_TARGET a
+       MERGE INTO Employee_Target a
 USING TEMP_EMP b
 ON a.EMP_ID = b.EMP_ID
 

@@ -5,4 +5,4 @@
 =========================================================*/
 
 Create or replace stream Employee_Stream
-on table employee_new
+on table employee

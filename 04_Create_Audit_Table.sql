@@ -1,4 +1,4 @@
- Create table employee_audit_new
+ Create table employee_audit
  (
      AUDIT_TIME timestamp
      ,EMP_ID int

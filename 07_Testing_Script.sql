@@ -34,7 +34,7 @@ FROM EMPLOYEE_AUDIT;
 =========================================================*/
 
 SELECT *
-FROM EMPLOYEE_NEW_TARGET;
+FROM Employee_Target;
 
 
 /*=========================================================
@@ -59,7 +59,7 @@ CALL SP_PROCESS_EMPLOYEE();
 
 --- Testing QUery
 
-insert into employee_new
+insert into employee
 (emp_id,emp_name,department,salary)
 values
 (126,'Vaishali ui','SQL', 98000)
@@ -77,4 +77,4 @@ SELECT * FROM EMPLOYEE_STREAM;
 
 SELECT * FROM EMPLOYEE_AUDIT;
 
-SELECT * FROM EMPLOYEE_NEW_TARGET;
+SELECT * FROM Employee_Target;
